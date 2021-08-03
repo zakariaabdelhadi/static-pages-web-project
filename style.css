@@ -1,0 +1,314 @@
+body
+{
+    background-color:#F9F9F9;
+    opacity: 0.9;
+    
+}
+
+header
+{
+    
+    
+    /*justify-content: flex-start;*/
+    margin: 0cm;
+   background-color: #FFED99;
+   display: flex;
+   border-radius:10px;
+
+}
+
+header h1
+{
+    margin: auto;
+
+}
+
+#banner{
+    margin: 5px;
+  
+}
+#banner img{
+    margin-left: 60px;
+    height: 100px;
+}
+
+nav
+{
+    position: sticky;
+    margin-top: 0cm;
+    background-color:#39A2DB;
+    text-align: center;
+    opacity: 0.7;
+    border-radius:10px;
+
+
+    
+}
+
+nav ul{
+    margin: 0cm;
+    padding: 0cm;
+
+}
+nav li{
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    font-size: 16px;
+
+    
+}
+ 
+
+nav ul li:first-child{
+    background-color:hotpink;
+    color: black;
+}
+nav ul li:nth-child(2){
+    background-color: seagreen;
+    color: black;
+
+}
+nav ul li:last-child{
+    background-color: lightsalmon;
+    color: black;
+
+}
+nav ul li{
+    border-radius: 5px;
+
+}
+
+nav ul li a{
+text-decoration: none;
+font-weight: bold;
+}
+
+nav ul li a#actif{
+    background-color: blanchedalmond;
+    
+     }
+    /*
+     nav ul li a:hover{
+        background-color:burlywood;
+
+        }*/
+        nav ul li {
+            transition-property:background-color;
+            transition-duration:3s;
+          /*  transition-delay: 1s;*/
+            }
+            nav ul li:hover {
+background-color:greenyellow;
+                }
+              
+
+section{
+
+    border: solid 3px;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+               
+section > h2 {
+
+    padding: 0.2em;
+    border: solid 3px;
+    border-radius: 10px;
+    position: absolute;top: -1.7em;left: 10px;
+    background-color: white;
+    font-size: 1em;
+    text-transform : uppercase;
+ 
+
+}
+
+section::before{
+
+    content:"";
+    display: block;
+    height: 1em;
+    margin-bottom: 5px;
+    
+}
+.table
+{
+   
+    width:100%;
+    opacity: 0.8;
+
+  
+}
+
+td,th{
+
+   
+    padding: 5px;
+    border-radius: 5px;
+
+
+}
+/*
+th{
+
+    background-color: saddlebrown;
+    color: white;
+}
+td{
+
+    background-color: slategray;
+    color: white;
+
+}*/
+tr:nth-child(2n){
+background-color: snow;
+}
+tr:nth-child(2n+1){
+    background-color: thistle;
+}
+th{
+
+    background-color: saddlebrown;
+    color: white;
+    
+}
+table tr th:nth-child(2){
+    background-color: purple;
+    color: white;
+
+}
+table #dunkel{
+    background-color: purple;
+    color: white;
+
+}
+p{
+    text-indent: 2em;
+    text-align: justify;
+
+}
+p::first-letter {
+    color: red;
+    text-align: justify;
+    font-size: 3em;
+    font-weight: normal;
+    font-family: "Anglo Text";
+                                                
+  }
+
+  blockquote{
+      margin-left: 3em;
+      margin-right: 3em;
+      padding: 5px;
+      border: red solid 1px;
+      border-radius: 10px;
+      font-style: italic;
+      box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+
+
+  }
+  aside span{
+
+    background-color: wheat;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 15px;
+    padding: 5px;
+    border-left: 10px;
+    float: right;
+    opacity: 0.8;
+    
+  }
+
+.slide-wrapper{
+
+    overflow: hidden;
+    width: 50%;
+    height: 420px;
+    margin:auto;
+    border-radius: 20px;
+
+}
+.slide-wrapper .slide{
+
+    position: relative;
+    left: 0px;
+    margin: 0px;
+    width: 400%;
+    border-radius: 10px;
+    animation:slideshow 20s infinite;
+
+    
+}
+.slide-wrapper .slide img{
+
+   float: left;
+   width: 25%;
+}
+@keyframes slideshow {
+    0% {left: 0;}
+    33% {left: -100%;}
+    67% {left: -200%; }
+    100% {left: -300%;}
+    }
+
+    input,select, textarea {
+        border: solid 1px;
+        border-radius: 5px;
+        margin: 5px;
+        padding:5px;
+
+
+    }
+    input:required{
+
+        background-color:blanchedalmond;
+    }
+
+    label::after{
+
+        content: "";
+        display: block;
+    }
+
+    input[type="submit"]{
+
+        width: 100px;
+        height: 30px;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        label::after{
+
+            content: "";
+            display: block;
+            
+        }
+
+        input:not([type ="radio"]),input:not([type ="checkbox"]),input:not([type ="color"]),select, textarea {
+           width: 90%;
+    
+        }
+        .slide-wrapper{
+
+            width: 90%;
+        }
+      }
+
+    footer 
+    {
+
+        background-color:#39A2DB;
+        color: rgb(245, 10, 10);
+        border-radius: 10px;
+        opacity: 0.5    ;
+
+        width: auto;
+        padding: 5px;
+        margin: top 10px;;
+        text-align: center;
+        font-size: 1.2em;
+    }
+  

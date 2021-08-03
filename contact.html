@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Malak Meroua Beddal">
+    <meta name="description" content="Livre sur la programmation">
+    <meta name="keywords" content="livre, programmation">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>Introduction à la programmation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div id="banner"> <img src="img/banner.jpg" alt=""></div>
+        <h1>Introduction à la programmation</h1>
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">index.html</a></li>
+            <li ><a id="actif" href="#">contact.html</a></li>
+            <li><a href="auteur.html">auteur.html</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <form enctype="multipart/form-data" action="https://www.monsite.com" method="post">
+           
+              <!--  <legend>Formulaire:</legend> -->
+                <section>
+                    <h2>Informations personelles</h2>
+                    <label for="fname">Nom:</label>
+                    <input type="text" name="fname" required><br>
+                    <label for="lname">Prenom:</label>
+                    <input type="text" name="lname" required><br>
+                    <label for="birth">date de naissance:</label>
+                    <input type="date" name="birth" min="1941-01-01" max="2004-12-31"><br>
+                    <label for="mail">E-mail:</label>
+                    <input type="email" name="mail"><br><br>
+                    <label for="n_etud">Niveau d'etude:</label>
+                    <SELECT name="n_etud" size="1">
+                        <OPTION>1CP
+                        <OPTION>2CP
+                        <OPTION>1CS
+                        <OPTION>2CS
+                        <OPTION>3CS
+                        <OPTION>Licence
+                        <OPTION>Master
+                    </SELECT><br><br>
+                    <label>Experience:</label><br>
+                      <input type="radio" id="Débutant" name="Experience" value="Débutant" checked>
+                      <label for="Débutant">Débutant</label>
+                      <input type="radio" id="Intermediare" name="Experience" value="Intermediare">
+                      <label for="Intermediare">Intermediare</label>
+                      <input type="radio" id="Avancé" name="Experience" value="Avancé">
+                      <label for="Avancé">Avancé</label>
+                </section>
+                <br><br>
+
+                <section>
+
+                    <h2>Opinion</h2>
+                    <label>Quelles sont les éléments à améliorer :</label>
+                    <input type="checkbox">
+                      <label>les commentaires</label>
+                      <input type="checkbox">
+                      <label>les variables</label>
+                      <input type="checkbox">
+                      <label>les instructions</label>
+                    <br><br>
+
+                <label>Choisir une couleur pour la page de garde:</label>
+
+                <div>
+                    <input type="radio" name="p_garde" id="color1" checked><input type="color" id="p_garde"
+                        name="p_garde" value="#0000ff">
+                    <label for="p_garde">Blue</label>
+                    <input type="radio" name="p_garde" id="color2"><input type="color" id="p_garde" name="p_garde"
+                        value="#DA0037">
+                    <label for="p_garde">Rouge</label>
+                    <input type="radio" name="p_garde" id="color3"><input type="color" id="p_garde" name="p_garde"
+                        value="#4AA96C">
+                    <label for="p_garde">Vert</label>
+                </div>
+
+                <br>
+                <label for="op">Votre Opinion</label>
+                <textarea id="op" name="op" rows="3">
+    </textarea><br><br>
+                <label for="avatar">Joindre un fichier pdf :</label>
+
+                <input type="file" id="file" name="file" accept="application/pdf">
+            </section>
+
+                <br><br>
+                <input type="submit" value="envoyer">
+            
+        </form>
+
+    </main>
+    <footer>
+        <div class="copyr">
+
+            Copyright&copy; 2021 <a class="mail" href="mailto:jm_beddal@esi.dz"> Beddal meroua malak </a>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
